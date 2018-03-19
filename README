@@ -1,0 +1,21 @@
+Lillian Arguelles
+CS50X-Miami
+Final Project
+
+This final project consists of 4 HTML pages, 1 CSS stylesheet,
+3 images and 2 javascript files.
+
+Starting on the Main Page (project-main.html) users can navigate
+to either the Codes and Ciphers page (code-cipher.html), to the
+Breakout - The Game Page (breakout.html) or finally to the
+About Us page (about.html).
+
+On the Codes and Ciphers page, users can learn about the
+Caesar Cipher and the Vigenere Cipher. Users can encrypt or
+decrypt messages using the javascript form shown on the page.
+
+On the Breakout Game page, users can learn how to play and play
+the Breakout game on the webpage.
+
+On the About Us page, it is simply a statement of what the site
+is for.
