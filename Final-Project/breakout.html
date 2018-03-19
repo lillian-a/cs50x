@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <title>CS50X Project - Breakout - The Game</title>
+    <!-- <link rel="stylesheet" type="text/css" href="file:///home/jharvard/Dropbox/Project/public/css/project-style.css"> -->
+    <link rel="stylesheet" type="text/css" href="public/css/project-style.css">
+    <style>
+        canvas { background: #EAF4D9;}
+    </style>
+</head>
+
+<body>
+    <!-- TITLE AT TOP OF PAGE  -->
+
+    <h1 class="main">Puzzles & Games</h1>
+    <br>
+
+
+    <!-- BUTTONS AT TOP  -->
+    <center><nav>
+        <!-- <a href="file:///home/jharvard/Dropbox/Project/project-main.html"><button class="navi" type="button">Main Page</button></a> -->
+        <a href="project-main.html"><button class="navi" type="button">Main Page</button></a>
+        <!-- <a href="file:///home/jharvard/Dropbox/Project/about.html"><button class="navi" type="button">About Us</button></a> -->
+        <a href="about.html"><button class="navi" type="button">About Us</button></a>
+    </nav></center>
+    <hr>
+
+    <!-- MAIN PART  -->
+
+    <p class="subtitle">Breakout - The Game</p>
+    <hr>
+    <center><p class="subheading">How To Play:</p></center>
+    <p><b>Move The Paddle:</b><br> You can either use the Left and Right arrow keys on the keyboard or hover your mouse over
+    the game of the direction (left or right) of where you want to move.</p>
+    <!-- <center><img src="file:///home/jharvard/Dropbox/Project/public/img/arrow.png" alt="Arrow Image" style="width:265px;height:181px;"></center><br> -->
+    <center><img src="public/img/arrow.png" alt="Arrow Image" style="width:265px;height:181px;"></center><br>
+    <p><b>Goal Of The Game:</b><br> Hit the bricks with the ball while not letting it hit the bottom. You start with
+    3 lives, each time the ball hits the bottom a life is lost. 3 Lives Lost = Game Over.</p>
+    <p><b>To Start the Game:</b><br> Click inside of the game window.</p>
+
+    <center>
+    <canvas id="gamecanvas" width="480" height="600"></canvas>
+    <!-- <script type="text/javascript" src="file:///home/jharvard/Dropbox/Project/public/js/breakout.js"></script> -->
+    <script type="text/javascript" src="public/js/breakout.js"></script>
+    </center>
+
+
+    <!-- FOOTER  -->
+    <hr>
+    <p class="footer">&copy; 2015 - Lillian Arguelles - CS50X Miami</p>
+
+</body>
+
+</html>

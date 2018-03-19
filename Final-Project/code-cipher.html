@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CS50X Project - Puzzles & Games - Codes & Ciphers</title>
+    <!-- <link rel="stylesheet" type="text/css" href="file:///home/jharvard/Dropbox/Project/public/css/project-style.css"> -->
+    <link rel="stylesheet" type="text/css" href="public/css/project-style.css">
+    <!-- <script type="text/javascript" src="file:///home/jharvard/Dropbox/Project/public/js/cipher.js"></script> -->
+    <script type="text/javascript" src="public/js/cipher.js"></script>
+</head>
+
+<body>
+
+    <!-- TITLE AT TOP OF PAGE  -->
+
+    <h1 class="main">Puzzles & Games</h1>
+    <br>
+
+
+
+
+    <!-- BUTTONS AT TOP  -->
+    <center><nav>
+      <!-- <a href="file:///home/jharvard/Dropbox/Project/project-main.html"><button class="navi" type="button">Main Page</button></a> -->
+      <a href="project-main.html"><button class="navi" type="button">Main Page</button></a>
+      <!-- <a href="file:///home/jharvard/Dropbox/Project/about.html"><button class="navi" type="button">About Us</button></a> -->
+      <a href="about.html"><button class="navi" type="button">About Us</button></a>
+    </nav></center>
+    <br>
+    <hr>
+
+    <!-- MAIN PART  -->
+    <p class="subtitle">Codes & Ciphers</p>
+    <hr>
+    <center><p>Crytography is the process of writing or reading secret messages or codes. The Caesar Cipher
+    and Vigenere Cipher are two enciphering codes that can be used. They take 'Plaintext' (words in readable language)
+    to 'Ciphertext' (encoded words). Below you can learn more about them and even create your own secret codes. Have Fun!</p></center>
+    <hr>
+
+
+    <!-- CAESAR  -->
+    <p class="subheading">Caesar Cipher</p>
+
+    <!-- <center><img src="file:///home/jharvard/Dropbox/Project/public/img/caesar-ex.png" alt="Caesar Image" style="width:552px;height:82px;"></center> -->
+    <center><img src="public/img/caesar-ex.png" alt="Caesar Image" style="width:552px;height:82px;"></center>
+    <center><p>The Caesar Cipher is a simple substitution cipher in which each letter is replaced by another letter a fixed number
+    of positions down the alphabet. The image above show a shift of 5 positions. In this A becomes F, B becomes G and so on.
+    To use the Encrypter and Decrypter below, enter the text you want to Encode into the Plaintext box, choose a number to
+    'shift' by, and click the Encrypt button. To Decrypt, enter the text into the Ciphertext box, choose a number to 'shift' by,
+    and click the Decrypt button.</p></center>
+    <br>
+    <!-- CAESAR SECTION  -->
+    <p>Plaintext:</p>
+    <textarea class="textbox" rows="5" columns="200" id="cplain"></textarea>
+    <br>
+    <p>Shift:</p> <select id="cshift" name = "cshift" size="1">
+        <option value="0" selected="selected">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+    </select>
+    <br>
+    <p>Ciphertext:</p>
+
+    <textarea class="textbox" rows="5" columns="200" id="ccipher"></textarea>
+    <br>
+    <input type="button" class="btn" value="Encrypt" onclick="CaesarEncrypt()">
+    <input type="button" class="btn" value="Decrypt" onclick="CaesarDecrypt()">
+    <input type="button" class="btn" value="Clear" onclick="CaesarClear()">
+
+
+    <br><br>
+    <!-- VIGENERE -->
+    <p class="subheading">Vigenere Cipher</p>
+
+    <!-- VIGENERE SECTION  -->
+    <!-- <center><img src="file:///home/jharvard/Dropbox/Project/public/img/vig-chart.png" alt="Vigenere Image" style="width:454px;height:455px;"></center> -->
+    <center><img src="public/img/vig-chart.png" alt="Vigenere Image" style="width:454px;height:455px;"></center>
+    <center><p>The Vigenere Cipher is a polyalphabetic substitution cipher that uses a number of different Caesar Ciphers
+    based on letters of a keyword. Above is the basic chart the Vigenere Cipher uses. If you take the plaintext letter 'I' and
+    then the keyword letter 'K' the ciphertext letter will be 'R'. To use the Encrypter and Decrypter below, enter the text you
+    want to Encode into the Plaintext box, enter the text of a keyword to use and click the Encrypt button. To Decrypt, enter the
+    text into the Ciphertext box, enter the text of a keyword to use, and click the Decrypt button.
+    </p></center>
+    <br>
+    <p>Plaintext:</p>
+    <textarea class="textbox" rows="5" columns="200" id="vplain"></textarea>
+    <br>
+    <p>Shift:</p>
+    <input type="text" id = "vshift" name="vshift">
+    <br>
+    <p>Ciphertext:</p>
+    <textarea class="textbox" rows="5" columns="200" id="vcipher"></textarea>
+    <br>
+    <input type="button" class="btn" value="Encrypt" onclick="VigenereEncrypt()">
+    <input type="button" class="btn" value="Decrypt" onclick="VigenereDecrypt()">
+    <input type="button" class="btn" value="Clear" onclick="VigenereClear()">
+    <br>
+    <br>
+
+
+    <!-- FOOTER  -->
+    <hr>
+    <p class="footer">&copy; 2015 - Lillian Arguelles - CS50X Miami</p>
+</body>
+
+</html>

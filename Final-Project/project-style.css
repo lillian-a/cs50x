@@ -1,0 +1,74 @@
+h1.main{
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+}
+
+body{
+    background-color: #F0F8FA;
+}
+
+p{
+    font-family: "Arial";
+    font-size: 16px;
+}
+
+p.footer{
+    font-size: 10px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+p.subtitle{
+    font-size: 36px;
+    font-style: bold;
+    text-align: center;
+}
+
+p.subheading{
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+}
+
+.btn{
+    background: #3498DB;
+    font-family: "Arial";
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+}
+
+.btn:hover{
+    background: #3CB0FD;
+}
+
+.navi{
+    width: 250px;
+    background: #88cffe;
+    font-family: "Arial";
+    color: #000000;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+}
+.navi:hover{
+    background: #3CB0FD;
+}
+.textbox{
+    width: 500px;
+    height: 150px;
+}
+.mainb{
+    font-style: bold;
+    width: 250px;
+    height: 200px;
+    background: #b0fd3c;
+    font-family: "Arial";
+    color: #000000;
+    font-size: 28px;
+    padding: 5px 5px 5px 5px;
+}
+.mainb:hover{
+    background: #3CB0FD;
+}
